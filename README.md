@@ -9,6 +9,7 @@ sudo apt install cmake make libpipewire-0.3-dev
 ```
 wget https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage
 ```
+```
 chmod +x linuxdeploy-x86_64.AppImage
 ```
 ```
