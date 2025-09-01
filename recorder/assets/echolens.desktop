@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Echolens
+Comment=Automatically records microphone audio when in use
+Exec=echolens
+Icon=echolens
+Type=Application
+Categories=AudioVideo;Audio;Recorder;
