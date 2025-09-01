@@ -7,9 +7,9 @@
 #include <pipewire/pipewire.h>
 #include <spa/param/audio/format-utils.h>
 #include <spa/param/props.h>
-#include <spa/utils/result.h>
+#include <spa/utils/result.h>ok
 
-#define OUR_APP_NAME "PipeWire-Auto-Recorder-Internal"
+#define OUR_APP_NAME "Echolens - Live Recorder"
 
 
 struct data init_data()
