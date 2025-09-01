@@ -1,9 +1,18 @@
 cmake_minimum_required(VERSION 3.10)
 project(echolens C)
 
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(PIPEWIRE REQUIRED libpipewire-0.3)
+
 find_program(LINUXDEPLOY_EXECUTABLE linuxdeploy REQUIRED)
 
-add_executable(echolens src/main.c)
+add_executable(echolens src/main.c src/recorder.c)
+
+target_include_directories(echolens PUBLIC
+    include
+    ${PIPEWIRE_INCLUDE_DIRS}
+)
+target_link_libraries(echolens PUBLIC ${PIPEWIRE_LIBRARIES})
 
 install(TARGETS echolens DESTINATION bin)
 
