@@ -31,12 +31,14 @@ cd recorder
 mkdir build
 cmake ..
 make
-make AppImage```
+make AppImage
+```
 
 ## Transcriber Build
-``
+```
 cd transcriber
 virtualenv venv
 source venv/bin/active
 pip install -r requirements.txt
 pyinstaller --name transcriber_app --onefile --clean transcriber.py
+```
