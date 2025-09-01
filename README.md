@@ -19,22 +19,10 @@ mkdir -p ~/.local/bin
 mv linuxdeploy-x86_64.AppImage ~/.local/bin/linuxdeploy
 ```
 ```
-echo '' >> ~/.profile
+echo 'PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 ```
 ```
-echo '# add ~/.local/bin to PATH if it exists' >> ~/.profile
-```
-```
-echo 'if [ -d "$HOME/.local/bin" ] ; then' >> ~/.profile
-```
-```
-echo '    PATH="$HOME/.local/bin:$PATH"' >> ~/.profile
-```
-```
-echo 'fi' >> ~/.profile
-```
-```
-source ~/.profile
+source ~/.bashrc
 ```
 
 ## Build
